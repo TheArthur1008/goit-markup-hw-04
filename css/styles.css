@@ -3,6 +3,7 @@
 /* основной цвет фона #FFFFFF*/
 /* вторичный цвет фона #F5F4FA */
 /* акцент #2196F3 */
+/* цвет иконок #AFB1B8 */
 
 :root {
     --primary-text-color: #212121;
@@ -11,6 +12,7 @@
     --primary-white-color: #FFFFFF;
     --background-grey-color: #F5F4FA;
     --background-spaygrey-color: #2F303A;
+    --icon-grey-color: #AFB1B8;
 
 }
 
@@ -23,17 +25,16 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
-    
-    
 }
 
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    border: none;
 }
 
-/* logo */
+/* Логотип */
 .logo {
     display: flex;
     align-items: center;
@@ -54,14 +55,13 @@ ul {
     
     color: var(--accent-color);
 }
-/* container */
+/* Контейнер */
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    /* outline: 2px solid red; */
 }
 .main-nav {
    display: flex;
@@ -71,7 +71,7 @@ ul {
     display: flex;
 }
 
-/* site nav */
+/* Навигация */
 .site-nav {
     display: flex;
 }
@@ -103,9 +103,10 @@ ul {
     color: var(--accent-color);
 }
 
-/* site contacts*/
+/* Контакты */
+
 .site-contacts {
-    display: flex;
+    display: inline-flex;
     margin-left: auto;
 }
 .site-contacts .item:not(:last-child) {
@@ -124,19 +125,49 @@ ul {
 .site-contacts .link:focus {
     color: var(--accent-color);
 }
+.link-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
 
-/* Hero */
+    fill: var(--title-text-color);
+    
+}
+
+.link-icon:hover,
+.link-icon:focus {
+    fill: var(--accent-color);
+}
+
+
+/* Герой */
 
 .hero {
-    background-color: var(--background-spaygrey-color);
+    max-width: 1600px;
+    height: 600px;
+    background-color: #C4C4C4;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     text-align: center;
-
+    
 }
 
 .hero-title {
+    max-width: 696px;
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
 
     color: var(--primary-white-color);
 
@@ -145,6 +176,8 @@ ul {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
+    
     
     
 }
@@ -163,9 +196,9 @@ ul {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;
-    
 }
 
 .button.active {
@@ -188,7 +221,7 @@ ul {
 }
 
 
-/* peculiarities */
+/* Особенности */
 .visual-heading{
     position: absolute;
     width: 1px;
@@ -208,6 +241,7 @@ ul {
 
 .peculiarities {
     display: flex;
+    align-items: center;
 
 }
 
@@ -218,6 +252,15 @@ ul {
 .peculiarities .item:not(:last-child) {
     margin-right: 30px;
 
+}
+
+.item-icom {
+    width: 270px;
+    height: 120px;
+    padding-left: 100px;
+    border-radius: 4px;
+    background-color: var(--background-grey-color);
+    
 }
 
 .peculiarities-title {
@@ -242,7 +285,7 @@ ul {
     
 }
 
-/* work */
+/* Чем мы занимаемся */
 
 .work {
     display: flex;
@@ -269,21 +312,55 @@ ul {
     margin-right: 30px;
 }
 
-/* team */
+/* Наша команда */
 .section.team {
     background-color: var(--background-grey-color);  
 }
 
 .team {
     display: flex;
+    
 }
  
 .team-list {
     width: 270px;
 
     background-color: var(--primary-white-color);
+    box-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
     text-align: center;
+}
+
+.team-link {
+    display: inline-flex;
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 30px;
+    margin-top: 16px;
+
+    fill: var(--icon-grey-color);
+
+}
+.team-icon {
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.team-link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-link:hover,
+.team-link:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+    border-radius: 50%;
+    border: 0;
+
 }
 
 .team-list:not(:last-child) {
@@ -313,14 +390,67 @@ ul {
     
 }
 
+/* Клиенты */
+
+.clients {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    
+}
+
+.clients-link {
+    display: inline-flex;
+    text-decoration: none;
+    width: 170px;
+    height: 92px;
+    margin-top: 50px;
+
+    fill: var(--icon-grey-color);
+    outline: 1px solid var(--icon-grey-color);
+    border-radius: 4px;
+}
+
+.clients-list:not(:last-child) {
+    margin-right: 30px;
+}
+.clients-icon {
+    padding-top: 16px;
+    padding-left: 32px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    fill: var(--accent-color);
+    outline: 1px solid var(--accent-color);
+
+}
+
+
 /* footer */
 
 .footer {
     background-color: var(--background-spaygrey-color);
 }
 
+/* .container.footer {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    
+} */
+
+/* .container.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+
+
+   
 .logo-footer {
-    display: block;
+    display: flex;
     padding-top: 60px;
     margin-bottom: 20px;
 
@@ -335,6 +465,8 @@ ul {
 }
 
 .logo-footer .title {
+    display: block;
+    align-items: flex-start;
     color: var(--accent-color);
 
 }
@@ -365,6 +497,57 @@ ul {
 .footer-adress .link:hover,
 .footer-adress .link:focus {
     color: var(--accent-color);
+}
+
+.text {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    color: var(--primary-white-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+.soc {
+    display:flex;
+    
+}
+    
+
+.soc-link {
+    display:flex;
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 30px;
+    margin-top: 16px;
+
+    fill: var(--primary-white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+}
+
+.soc-icon {
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.soc-list:not(:last-child) {
+    margin-right: 10px;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+    border-radius: 50%;
 }
 
 
