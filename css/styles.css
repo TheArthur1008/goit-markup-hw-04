@@ -423,7 +423,7 @@ ul {
 .clients-link:hover,
 .clients-link:focus {
     fill: var(--accent-color);
-    outline: 1px solid var(--accent-color);
+    border: 1px solid var(--accent-color);
 
 }
 
@@ -431,26 +431,12 @@ ul {
 /* footer */
 
 .footer {
+    display: flex;
     background-color: var(--background-spaygrey-color);
 }
-
-/* .container.footer {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-end;
-    
-} */
-
-/* .container.icon {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-} */
-
-
    
 .logo-footer {
-    display: flex;
+    display: inline-flex;
     padding-top: 60px;
     margin-bottom: 20px;
 
@@ -461,14 +447,17 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+    font-style: normal;
     
 }
 
 .logo-footer .title {
-    display: block;
-    align-items: flex-start;
     color: var(--accent-color);
 
+}
+
+.footer-adress {
+    display: inline-flex;
 }
 
 .footer-adress .map {
@@ -504,6 +493,7 @@ ul {
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
+    padding-bottom: 20px;
 
     color: var(--primary-white-color);
 
@@ -514,19 +504,27 @@ ul {
     text-transform: uppercase;
 
 }
+.social {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
 .soc {
-    display:flex;
-    
+    display: inline-flex;
+
+} 
+
+.soc-list {
+    /* display: block; */
 }
     
 
 .soc-link {
-    display:flex;
+    display: inline-flex;
     text-decoration: none;
     width: 44px;
     height: 44px;
-    margin-bottom: 30px;
-    margin-top: 16px;
 
     fill: var(--primary-white-color);
     background-color: rgba(255, 255, 255, 0.1);
@@ -535,6 +533,7 @@ ul {
 }
 
 .soc-icon {
+    display: inline-flex;
     padding-left: 12px;
     padding-top: 12px;
 }
