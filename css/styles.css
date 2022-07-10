@@ -458,6 +458,7 @@ ul {
 
 .footer-adress {
     display: inline-flex;
+    margin-bottom: 60px;
 }
 
 .footer-adress .map {
