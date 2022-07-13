@@ -39,6 +39,12 @@ ul {
     padding-bottom: 94px;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Контейнер */
 .container {
     width: 1200px;
@@ -115,7 +121,6 @@ ul {
 
 .site-contacts {
     display: flex;
-    align-items: center;
     margin-left: auto;
     
 }
@@ -126,7 +131,6 @@ ul {
 .site-contacts .link {
     padding-top: 32px;
     padding-bottom: 32px;
-    align-items: center;
 
     color: var(--title-text-color);
 
@@ -141,10 +145,11 @@ ul {
     color: var(--accent-color);
 }
 .link-icon {
-   background-position: center;
+    background-position: center;
     width: 16px;
     height: 16px;
     margin-right: 10px;
+    vertical-align: middle;
 
     fill: var(--title-text-color);
     
@@ -191,13 +196,10 @@ ul {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    /* text-align: center; */
-    
-    
     
 }
 
-.hero>button {
+.hero-button {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 32px;
@@ -221,14 +223,7 @@ ul {
     background-color: var(--accent-color);
     
 }
-.button.active,
-.button {
-    display: inline-block;
-    padding: 6px 22px;
-    border-radius: 4px;
-    text-align: center;
-    border: 0;
-}
+
 
 /* Особенности */
 .visual-heading{
@@ -319,12 +314,12 @@ ul {
     background-color: var(--background-grey-color);  
 }
 
-.team {
+.team-list {
     display: flex;
     
 }
  
-.team-list {
+.team-roster {
     width: 270px;
 
     background-color: var(--primary-white-color);
@@ -336,7 +331,7 @@ ul {
     text-align: center;
 }
 
-.team-list:not(:last-child) {
+.team-roster:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -599,6 +594,15 @@ ul {
     background-color: var(--accent-color);
 }
 
+.button.active,
+.button {
+    display: inline-block;
+    padding: 6px 22px;
+    border-radius: 4px;
+    text-align: center;
+    border: 0;
+}
+
 .job {
     display: flex;
     flex-wrap: wrap;
@@ -619,6 +623,13 @@ ul {
 
 .job-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
+}
+
+.job-item:hover,
+.job-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06), 
+                1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .job-link {
