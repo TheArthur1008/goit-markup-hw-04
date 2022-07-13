@@ -152,13 +152,8 @@ img {
     margin-right: 10px;
     vertical-align: middle;
 
-    fill: var(--title-text-color)
+    fill: currentColor;
     
-}
-
-.link-icon:hover,
-.link-icon:focus {
-    fill: var(--accent-color);
 }
 
 
