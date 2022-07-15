@@ -13,7 +13,6 @@
     --background-grey-color: #F5F4FA;
     --background-spaygrey-color: #2F303A;
     --icon-grey-color: #AFB1B8;
-
 }
 
 body {
@@ -45,7 +44,8 @@ img {
     height: auto;
 }
 
-/* Контейнер */
+/* Container */
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -59,7 +59,8 @@ img {
     align-items: center;
 }
 
-/* Логотип */
+/* Logo*/
+
 .logo {
     margin-right: 93px;
 
@@ -69,23 +70,20 @@ img {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    text-decoration: none;
-    
-    
-    
+    text-decoration: none;   
 }
+
 .logo .title {
-    
     color: var(--accent-color);
 }
 
 .auth-nav {
     display: flex;
     align-items: center;
-
 }
 
-/* Навигация */
+/* Navigation */
+
 .site-nav {
     display: flex;
 }
@@ -104,8 +102,7 @@ img {
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
 .site-nav .link:hover,
@@ -117,15 +114,11 @@ img {
     color: var(--accent-color);
 }
 
-
-
-
-/* Контакты */
+/* Contacts */
 
 .site-contacts {
     display: flex;
-    margin-left: auto;
-    
+    margin-left: auto;  
 }
 
 .site-contacts .item:not(:last-child) {
@@ -155,14 +148,13 @@ img {
     margin-right: 10px;
     vertical-align: middle;
 
-    fill: currentColor;
-    
+    fill: currentColor;   
 }
 
 
-/* Герой */
+/* Hero*/
 
-.hero {
+.container.hero {
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -177,8 +169,7 @@ img {
     background-position: center;
     background-size: cover;
 
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .hero-title {
@@ -194,8 +185,7 @@ img {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;  
 }
 
 .hero-button {
@@ -219,12 +209,11 @@ img {
 
 .button.active {
     color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    
+    background-color: var(--accent-color);   
 }
 
 
-/* Особенности */
+/* Peculiarities */
 .visual-heading{
     position: absolute;
     width: 1px;
@@ -236,8 +225,8 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-
 }
+
 .section.no-padding {
     padding-top: 0;
 }
@@ -245,7 +234,6 @@ img {
 .peculiarities {
     display: flex;
     align-items: center;
-
 }
 
 .peculiarities .item {
@@ -254,7 +242,6 @@ img {
 
 .peculiarities .item:not(:last-child) {
     margin-right: 30px;
-
 }
 
 .item-icom {
@@ -262,8 +249,7 @@ img {
     height: 120px;
     padding-left: 100px;
     border-radius: 4px;
-    background-color: var(--background-grey-color);
-    
+    background-color: var(--background-grey-color);   
 }
 
 .peculiarities-title {
@@ -274,8 +260,7 @@ img {
 
     font-size: 14px;
     line-height: 1.1;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;   
 }
 
 .peculiarities-text {
@@ -284,11 +269,10 @@ img {
 
     color: var(--title-text-color);
 
-    line-height: 1.71;
-    
+    line-height: 1.71;   
 }
 
-/* Чем мы занимаемся */
+/* Work */
 
 .work {
     display: flex;
@@ -300,22 +284,21 @@ img {
 
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .work-link:not(:last-child) {
     margin-right: 30px;
 }
 
-/* Наша команда */
+/* Team */
+
 .section.team {
     background-color: var(--background-grey-color);  
 }
 
 .team-list {
-    display: flex;
-    
+    display: flex;    
 }
  
 .team-roster {
@@ -334,7 +317,6 @@ img {
     margin-right: 30px;
 }
 
-
 .team-link {
     display: inline-flex;
     text-decoration: none;
@@ -344,8 +326,8 @@ img {
     margin-top: 16px;
 
     fill: var(--icon-grey-color);
-
 }
+
 .team-icon {
     padding-left: 12px;
     padding-top: 12px;
@@ -361,10 +343,7 @@ img {
     fill: var(--primary-white-color);
     border-radius: 50%;
     border: 0;
-
 }
-
-
 
 .team-name {
     padding-top: 30px;
@@ -376,10 +355,9 @@ img {
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19;
-    
-    
+    line-height: 1.19;   
 }
+
 .team-job {
     padding-bottom: 30px;
     margin-top: 0;
@@ -388,18 +366,16 @@ img {
     color: var(--title-text-color);
 
     font-size: 16px;
-    line-height: 1.19;
-    
+    line-height: 1.19;   
 }
 
-/* Клиенты */
+/* Clients*/
 
 .clients {
     display: flex;
     margin: 0;
     padding: 0;
-    border: none;
-    
+    border: none;   
 }
 
 .clients-link {
@@ -417,6 +393,7 @@ img {
 .clients-list:not(:last-child) {
     margin-right: 30px;
 }
+
 .clients-icon {
     padding-top: 16px;
     padding-left: 32px;
@@ -426,11 +403,10 @@ img {
 .clients-link:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
-
 }
 
 
-/* footer */
+/* Footer */
 
 .footer {
     padding-top: 60px;
@@ -444,7 +420,6 @@ img {
 .footer .container {
     display: flex;
     align-items: baseline;
-
 }
    
 .logo-footer {
@@ -457,8 +432,7 @@ img {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
 .logo-footer .title {
@@ -478,8 +452,7 @@ img {
 
     font-style: normal;
     line-height: 1.71;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
 .footer-adress .link {
@@ -489,14 +462,13 @@ img {
 
     font-style: normal;
     line-height: 1.71;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
+
 .footer-adress .link:hover,
 .footer-adress .link:focus {
     color: var(--accent-color);
 }
-
 
 .footer-item:not(:last-child) {
     margin-bottom: 9px;
@@ -515,7 +487,6 @@ img {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
 }
 
 .social {
@@ -525,14 +496,8 @@ img {
 }
 
 .soc {
-    display: flex;
-    
+    display: flex;    
 } 
-
-.soc-list {
-    /* display: block; */
-}
-    
 
 .soc-link {
     display: inline-flex;
@@ -543,7 +508,6 @@ img {
     fill: var(--primary-white-color);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-
 }
 
 .soc-icon {
@@ -642,7 +606,6 @@ img {
     margin-bottom: 0;
 
     text-decoration: none;
-
 }
 
 .job-title {
@@ -656,11 +619,9 @@ img {
 
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
-    
-    
-    
+    letter-spacing: 0.06em;    
 }
+
 .job-text {
     margin-top: 0;
     margin-bottom: 0;
@@ -670,7 +631,6 @@ img {
     color: var(--title-text-color);
 
     font-size: 16px;
-    line-height: 1.88;
-    
+    line-height: 1.88;   
 }
 
