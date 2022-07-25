@@ -213,6 +213,12 @@ img {
     cursor: pointer;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+}
+
 .button.active {
     color: var(--primary-white-color);
     background-color: var(--accent-color);   
@@ -603,18 +609,17 @@ img {
     margin-bottom: 0;
 }
 
+.job-link {
+    display: block;
+
+    text-decoration: none;
+}
+
 .job-item:hover,
-.job-item:focus {
+.job-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
                 0px 4px 4px rgba(0, 0, 0, 0.06), 
                 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.job-link {
-    margin-top: 0;
-    margin-bottom: 0;
-
-    text-decoration: none;
 }
 
 .job-title {
